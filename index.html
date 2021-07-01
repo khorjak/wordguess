@@ -8,9 +8,16 @@
 </head>
 <body>
     <h2>Hangman</h2>
-    <div id="gameboard"></div>
-    <div id="attempts"></div>
-    <button id="play">Play Game</button>
+    <div id="gameBoard">
+        <div id="theWord">WORD</div>
+        <div>
+            <label>Attempts: </label>
+            <span id="attempts">0</span>
+        </div>
+        <div>Letters used: <span id="usedLetters"></span></div>
+        <div id="message"></div>
+    </div>
+    <button id="play" onclick="playGame()">Play Game</button>
     <script src="main.js"></script>
 </body>
 </html>
